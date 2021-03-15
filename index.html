@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack Functions</title>
+</head>
+<body>
+    <p style="text-align: center;">
+      Callbacks are a way to make sure certain codes don't execute until other codes have already finished execution. 
+    </p>
+  <br>
+
+
+  <div style="text-align: center;">
+    <button id="callMe">Click me for a display in the console!</button>
+    <p style="text-align: center;">Clicking on the button will show you........</p>
+  </div>
+ 
+  <script src="index.js"></script>
+    
+
+  <!-- new js object which stores a list of names  -->
+
+
+
+      <!-- <script type="text/javascript">
+        // object
+        const nameList = {
+          // two properties! names is an array that holds the list of names, then the second property stores the call back funtion which will only run if we add a new name.
+          names: [],      
+          onNewName: null, 
+          
+
+          // this funtion takes in the new name callback and will assign it as shown under it
+          init: function(newNameCallbalk) {
+            this.onNewName = newNameCallbalk;
+
+          },
+          
+
+          // this method will add a new name to the array then call the onnewname call back funtion with the argument name 
+          addName: function (name) {
+            this.names.push(name);
+            this.onNewName(name, this.name);
+
+          }
+        };
+
+        nameList.init(function(newName, allNames) {
+          console.log(newName);
+        
+          console.log("The current list is: " + allNames);
+
+        });
+
+        nameList.addName("Chris");
+        nameList.addName("Lee");
+        nameList.addName("Geterry");
+        nameList.addName("Damini");
+        nameList.addName("Sravanthi");
+
+      </script> -->
+</body>
+</html>
